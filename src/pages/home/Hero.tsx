@@ -1,11 +1,11 @@
-import Background from "../../assets/background.svg";
+import Background from "../../assets/background1.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
 
 export default function HomePage() {
 	return (
 		<section
-			className="w-full h-[700px] mt-[-90px] px-[40px] bg-no-repeat bg-cover"
+			className="w-full h-[575px] mt-[-90px] px-[40px] bg-no-repeat bg-cover"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
@@ -19,7 +19,7 @@ export default function HomePage() {
 				<div className="mt-4">
 					<PrimaryButton text={"Get in Touch!"} />
 				</div>
-				<img className="w-full max-w-[600px]" src={Laptop} alt="laptop" />
+				<img className="w-full max-w-[400px]" src={Laptop} alt="laptop" />
 			</div>
 		</section>
 	);
