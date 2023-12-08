@@ -7,7 +7,7 @@ interface Props {
 	largeFont?: boolean;
 }
 
-export default function Card({
+export default function PrimaryCard({
 	imageUrl,
 	heading,
 	children,

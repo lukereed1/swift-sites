@@ -1,11 +1,11 @@
-import Card from "../../components/Card";
+import Card from "../../components/PrimaryCard";
 import HandshakeIcon from "../../assets/handshake-icon.svg";
 import PaintBrushIcon from "../../assets/paintbrush-icon.svg";
 import SmallLaptopIcon from "../../assets/small-laptop-icon.svg";
 import RocketIcon from "../../assets/rocket-icon.svg";
 import SupportIcon from "../../assets/support-icon.svg";
 import PrimaryButton from "../../components/PrimaryButton";
-import SemiCircle from "../../components/SemiCircle";
+import SemiCircle from "../../assets/small-yellow-blob.svg";
 
 export default function ProcessOverview() {
 	return (
@@ -41,13 +41,14 @@ export default function ProcessOverview() {
 					Enjoy peace of mind with our ongoing support. We’re here to address
 					any updates or inquiries you may have.
 				</Card>
+				<div className="absolute bottom-[-1400px] right-0 scale-x-[-1]">
+					<img src={SemiCircle} alt="yellow semi circle" />
+				</div>
 			</div>
 
 			<div className="mt-6">
 				<PrimaryButton text="Our Services" />
 			</div>
-
-			<SemiCircle topDist={2000} rightSideScreen={true} />
 		</section>
 	);
 }

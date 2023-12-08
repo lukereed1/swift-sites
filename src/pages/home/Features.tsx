@@ -1,9 +1,9 @@
-import Card from "../../components/Card";
+import Card from "../../components/PrimaryCard";
 import PrimaryButton from "../../components/PrimaryButton";
 import LaptopIcon from "../../assets/laptop-icon.svg";
 import MobileIcon from "../../assets/mobile-icon.svg";
 import RunningIcon from "../../assets/running-icon.svg";
-import SemiCircle from "../../components/SemiCircle";
+import SemiCircle from "../../assets/small-yellow-blob.svg";
 
 export default function Features() {
 	return (
@@ -50,8 +50,10 @@ export default function Features() {
 					Our commitment to speed ensures that your website loads quickly,
 					enhancing user satisfaction.
 				</Card>
+				<div className="absolute bottom-[-450px] left-0 }">
+					<img src={SemiCircle} alt="yellow semi circle" />
+				</div>
 			</div>
-			<SemiCircle topDist={1000} />
 		</section>
 	);
 }
