@@ -6,4 +6,4 @@ const navlinks = [
 	{ title: "contact", path: "/contact" },
 ];
 
-export default function Navigation() {}
+export default navlinks;
