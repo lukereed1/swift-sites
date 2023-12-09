@@ -5,7 +5,7 @@ import Logo from "../assets/logo.svg";
 export default function Footer() {
 	return (
 		<footer
-			className="w-full h-[300px] mt-[0px] px-[40px] bg-no-repeat bg-center flex justify-between pt-4 pl-4 pr-8"
+			className="w-full h-[300px] mt-[0px] pt-4 pl-4 pr-8 bg-no-repeat bg-center flex justify-between"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
