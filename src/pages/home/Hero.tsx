@@ -2,24 +2,42 @@ import Background from "../../assets/background.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
 
-export default function HomePage() {
+export default function Hero() {
 	return (
 		<section
-			className="w-full h-[575px] mt-[-90px] px-[40px] bg-no-repeat bg-cover"
+			className="flex justify-center w-full h-[575px] mt-[-90px] bg-no-repeat bg-cover
+			lg:mt-[-108px] lg:h-[700px]"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
-			<div className="flex flex-col items-center pt-32 text-center text-white">
-				<h1 className="text-[30px] font-bold leading-10">
-					Website Design and Development for Small Businesses
-				</h1>
-				<h2 className="mt-3">
-					Elevate your business with out simple, yet powerful solutions
-				</h2>
-				<div className="mt-4">
-					<PrimaryButton text={"Get in Touch!"} />
+			<div
+				className="flex flex-col mt-[120px] px-[40px] text-center text-white
+				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]">
+				<div className="flex flex-col">
+					<h1
+						className="text-[30px] font-bold leading-10
+						lg:text-[48px] lg:leading-[60px]">
+						Website Design and
+						<br className="hidden lg:flex" /> Development for Small
+						<br className="hidden lg:flex" /> Businesses
+					</h1>
+					<h2
+						className="mt-3
+						lg:text-xl">
+						Elevate your business with our simple, yet
+						<br className="hidden lg:flex" /> powerful solutions
+					</h2>
+					<div className="mt-4">
+						<PrimaryButton text={"Get in Touch!"} />
+					</div>
 				</div>
-				<img className="w-full max-w-[400px]" src={Laptop} alt="laptop" />
+
+				<img
+					className="w-full max-w-[400px]
+					lg:absolute lg:ml-[420px] lg:mt-[50px] lg:max-w-[470px]"
+					src={Laptop}
+					alt="laptop"
+				/>
 			</div>
 		</section>
 	);
