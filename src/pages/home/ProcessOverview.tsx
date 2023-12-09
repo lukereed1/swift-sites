@@ -41,7 +41,7 @@ export default function ProcessOverview() {
 					Enjoy peace of mind with our ongoing support. We’re here to address
 					any updates or inquiries you may have.
 				</Card>
-				<div className="absolute bottom-[-1400px] right-0 scale-x-[-1]">
+				<div className="absolute bottom-[-1650px] right-0 scale-x-[-1]">
 					<img src={SemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>

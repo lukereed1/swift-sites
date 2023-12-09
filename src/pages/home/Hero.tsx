@@ -1,4 +1,4 @@
-import Background from "../../assets/background1.svg";
+import Background from "../../assets/background.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
 

@@ -50,7 +50,7 @@ export default function Features() {
 					Our commitment to speed ensures that your website loads quickly,
 					enhancing user satisfaction.
 				</Card>
-				<div className="absolute bottom-[-450px] left-0 }">
+				<div className="absolute bottom-[-700px] left-0 }">
 					<img src={SemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>
