@@ -1,6 +1,7 @@
 import Background from "../../assets/background.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
+import SecondaryButton from "../../components/SecondaryButton";
 
 export default function Hero() {
 	return (
@@ -23,17 +24,20 @@ export default function Hero() {
 					</h1>
 					<h2
 						className="mt-3
-						lg:text-xl">
+						lg:text-xl lg:mt-4">
 						Elevate your business with our simple, yet
 						<br className="hidden lg:flex" /> powerful solutions
 					</h2>
-					<div className="mt-4">
-						<PrimaryButton text={"Get in Touch!"} />
+					<div
+						className="mt-4 flex
+						lg:mt-6 lg:gap-2">
+						<PrimaryButton text="Get in Touch!" />
+						<SecondaryButton text="Our Story" />
 					</div>
 				</div>
 
 				<img
-					className="w-full max-w-[400px]
+					className="w-full max-w-[400px] mx-auto
 					lg:absolute lg:ml-[420px] lg:mt-[50px] lg:max-w-[470px]"
 					src={Laptop}
 					alt="laptop"

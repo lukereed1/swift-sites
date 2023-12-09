@@ -7,7 +7,10 @@ import SemiCircle from "../../assets/small-yellow-blob.svg";
 
 export default function Features() {
 	return (
-		<section className="flex flex-col items-center px-[40px] mt-20 sm:mt-44">
+		<section
+			className="flex flex-col items-center px-[40px] mt-20
+			sm:mt-44
+			lg:mt-0">
 			{/* WHY CHOOSE US */}
 			<div className="flex flex-col items-center text-center mb-14">
 				<h2 className="text-[28px] font-bold">
