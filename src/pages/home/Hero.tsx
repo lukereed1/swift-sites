@@ -29,10 +29,12 @@ export default function Hero() {
 						<br className="hidden lg:flex" /> powerful solutions
 					</h2>
 					<div
-						className="mt-4 flex
-						lg:mt-6 lg:gap-2">
+						className="mt-4
+						lg:flex lg:mt-6 lg:gap-2">
 						<PrimaryButton text="Get in Touch!" />
-						<SecondaryButton text="Our Story" />
+						<div className="hidden lg:flex">
+							<SecondaryButton text="Our Story" />
+						</div>
 					</div>
 				</div>
 
