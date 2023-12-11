@@ -10,7 +10,7 @@ export default function SideMenu({ handleSideMenu, sideMenuOpen }: Props) {
 	return (
 		<div
 			className={`fixed right-0 top-0 bg-blue-700 h-full duration-300 z-10 ${
-				sideMenuOpen ? "w-[60%]" : "w-[0%]"
+				sideMenuOpen ? "w-[60%] lg:w-[40%]" : "w-[0%]"
 			}`}>
 			<div className="pl-3 pt-3">
 				<button className="text-white" onClick={() => handleSideMenu()}>

@@ -14,7 +14,7 @@ export default function ProcessOverview() {
 		<section className="flex flex-col items-center text-center">
 			{/* HOW IT WORKS */}
 			<h2
-				className="text-[28px] font-bold mt-20
+				className="text-[32px] font-bold mt-28
 				lg:mt-40 lg:text-4xl">
 				<span className="text-[#0066FF]">HOW</span> IT WORKS
 			</h2>

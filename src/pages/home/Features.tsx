@@ -14,16 +14,16 @@ export default function Features() {
 			lg:mt-0">
 			{/* WHY CHOOSE US */}
 			<div
-				className="flex flex-col items-center text-center px-[40px]
+				className="flex flex-col items-center text-center px-[40px] max-w-[720px]
 					lg:w-[850px]">
 				<h2
-					className="text-[28px] font-bold
+					className="text-[32px] font-bold
 					lg:text-4xl">
 					<span className="text-[#0066FF]">WHY</span> CHOOSE US
 				</h2>
 
 				<p
-					className="text-sm mt-2
+					className="mt-2
 					lg:text-lg lg:mt-3">
 					We deliver elegant web solutions tailored to meet your specific needs.
 					Our team combines simplicity and sophistication to create impactful
@@ -68,7 +68,7 @@ export default function Features() {
 					<img src={SmallSemiCircle} alt="yellow semi circle" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-900px] left-0 z-0
+					className="hidden absolute bottom-[-1100px] left-0 z-[-1]
 					lg:flex">
 					<img src={MediumSemiCircle} alt="yellow semi circle" />
 				</div>

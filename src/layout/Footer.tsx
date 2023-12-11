@@ -5,13 +5,14 @@ import MenuButton from "../components/MenuButton";
 export default function Footer() {
 	return (
 		<footer
-			className="w-full h-[300px] mt-auto pt-4 bg-no-repeat bg-center"
+			className="w-full h-[300px] pt-4 bg-no-repeat bg-center
+			lg:mt-[200px]"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
 			<div
-				className="flex justify-between px-[40px]
-				lg:px-[80px]">
+				className="flex justify-between px-[40px] mx-auto
+				lg:px-[80px] lg:w-[1024px]">
 				<button className="mt-[180px]">
 					<img className="w-[200px]" src={Logo} alt="swift sites logo" />
 				</button>

@@ -8,9 +8,9 @@ export default function Costs() {
 	return (
 		<section className="flex flex-col items-center">
 			<div
-				className="text-center px-[40px]
+				className="flex flex-col items-center text-center px-[40px] max-w-[880px]
 				lg:px-[80px]">
-				<h2 className="text-[28px] font-bold mt-20">
+				<h2 className="text-[32px] font-bold mt-20">
 					<span className="text-[#0066FF]">$0 </span> Down,{" "}
 					<span className="text-[#0066FF]">$300 </span> Per Month
 				</h2>
@@ -23,16 +23,17 @@ export default function Costs() {
 				</p>
 			</div>
 			<div
-				className="flex flex-col px-[40px]
+				className="flex flex-col
 				lg:flex-row lg:px-[80px]">
 				<img
-					className="lg:ml-[-130px] lg:mt-[-70px]"
+					className="mt-[-20px] max-w-[400px] mx-auto
+					lg:ml-[-130px] lg:mt-[-70px] lg:max-w-[660px]"
 					src={MoneyPhone}
 					alt="iphone with coins on it"
 				/>
 				<div
-					className="flex flex-col mt-2 gap-8
-					lg:mt-[75px] lg:mr-[30px]">
+					className="flex flex-col mt-2 gap-8 px-[40px]
+					lg:mt-[75px] lg:mr-[30px] lg:px-0">
 					<SecondaryCard heading="Hosting Fees Included">
 						Hosting fees are built in to your monthly payment
 					</SecondaryCard>
@@ -55,7 +56,7 @@ export default function Costs() {
 					<img src={SmallSemiCircle} alt="" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-2900px] left-0 z-[-1]
+					className="hidden absolute bottom-[-2650px] left-0 z-[-1]
 					lg:flex">
 					<img src={MediumSemiCircle} alt="" />
 				</div>
