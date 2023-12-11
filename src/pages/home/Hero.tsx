@@ -17,7 +17,7 @@ export default function Hero() {
 			<div
 				className="flex flex-col mt-[120px] px-[40px] text-center text-white
 				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]
-				xl:mt-[185px] xl:px-[120px] xl:w-[1440px]">
+				xl:mt-[200px] xl:px-[120px] xl:w-[1440px]">
 				<div className="flex flex-col">
 					<h1
 						className="text-[30px] font-bold leading-10 max-w-[800px]

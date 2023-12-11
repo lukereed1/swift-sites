@@ -15,15 +15,19 @@ export default function ProcessOverview() {
 			{/* How it works */}
 			<h2
 				className="text-[32px] font-bold mt-28
-				lg:mt-40 lg:text-4xl">
+				lg:mt-40 lg:text-4xl
+				xl:mt-44 xl:text-[45px]">
 				<span className="text-[#0066FF]">HOW</span> IT WORKS
 			</h2>
 
 			{/* Process cards */}
 			<div
-				className="flex justify-around px-[40px]
-				lg:mt-4 lg:px-[80px]">
-				<div className="flex flex-col text-center mt-4 gap-9">
+				className="flex justify-between px-[40px]
+				lg:mt-4 lg:px-[80px]
+				xl:px-[120px]">
+				<div
+					className="flex flex-col text-center mt-4 gap-9
+					xl:mt-8">
 					<Card
 						leftAlign={true}
 						imageUrl={HandshakeIcon}
@@ -60,7 +64,9 @@ export default function ProcessOverview() {
 				</div>
 
 				{/* Process image */}
-				<div className="hidden lg:flex h-[390px] mt-[170px] ml-11">
+				<div
+					className="hidden lg:flex h-[390px] mt-[120px] ml-11
+				xl:h-[520px] xl:mr-[-90px] xl:mt-[160px]">
 					<img src={MobileStack} alt="stack of phones" />
 				</div>
 

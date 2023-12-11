@@ -11,26 +11,30 @@ export default function Features() {
 		<section
 			className="flex flex-col items-center mt-20
 			sm:mt-44
-			lg:mt-0">
+			lg:mt-0
+			xl:mt-28">
 			{/* Why choose us with Learn More button */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[720px]
-					lg:w-[850px]">
+					lg:max-w-[850px]
+					xl:max-w-[1200px]">
 				<h2
 					className="text-[32px] font-bold
-					lg:text-4xl">
+					lg:text-4xl
+					xl:text-[45px]">
 					<span className="text-[#0066FF]">WHY</span> CHOOSE US
 				</h2>
 
 				<p
 					className="mt-2
-					lg:text-lg lg:mt-3">
+					lg:text-lg lg:mt-3
+					xl:text-2xl xl:mt-6">
 					We deliver elegant web solutions tailored to meet your specific needs.
 					Our team combines simplicity and sophistication to create impactful
 					digital experiences for your business
 				</p>
 
-				<div className="mt-3 lg:mt-5">
+				<div className="mt-3 lg:mt-5 xl:mt-7">
 					<PrimaryButton text="Learn More" />
 				</div>
 			</div>
@@ -38,7 +42,8 @@ export default function Features() {
 			{/* Feature cards */}
 			<div
 				className="flex flex-col justify-center gap-11 mt-14 px-[40px]
-				lg:flex-row lg:flex-wrap lg:px-[80px] lg:gap-16">
+				lg:flex-row lg:flex-wrap lg:px-[80px] lg:gap-16
+				xl:mt-28">
 				<Card
 					imageUrl={LaptopIcon}
 					heading="Responsive Design"
