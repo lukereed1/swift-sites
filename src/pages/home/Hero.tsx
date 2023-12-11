@@ -5,6 +5,7 @@ import SecondaryButton from "../../components/SecondaryButton";
 
 export default function Hero() {
 	return (
+		// Curved gradient background
 		<section
 			className="flex justify-center w-full h-[575px] mt-[-90px] bg-no-repeat bg-cover
 			lg:mt-[-108px] lg:h-[740px]
@@ -12,6 +13,7 @@ export default function Hero() {
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
+			{/* Hero text and buttons */}
 			<div
 				className="flex flex-col mt-[120px] px-[40px] text-center text-white
 				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]
@@ -43,6 +45,7 @@ export default function Hero() {
 					</div>
 				</div>
 
+				{/* Hero image */}
 				<img
 					className="w-full max-w-[450px] mx-auto
 					lg:absolute lg:ml-[420px] lg:mt-[50px] lg:max-w-[470px]

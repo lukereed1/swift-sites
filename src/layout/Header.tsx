@@ -15,6 +15,8 @@ export default function Header() {
 					alt="swift sites logo"
 				/>
 			</button>
+
+			{/* Hamburger menu for Mobile and Tablet, Navlinks for Desktop (+1440px) */}
 			<div>
 				<Navigation />
 				<MenuButton />

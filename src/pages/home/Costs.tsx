@@ -7,6 +7,7 @@ import MediumSemiCircle from "../../assets/medium-semicircle.svg";
 export default function Costs() {
 	return (
 		<section className="flex flex-col items-center">
+			{/* Costs Description */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[880px]
 				lg:px-[80px]">
@@ -22,15 +23,19 @@ export default function Costs() {
 					are available if you require more than five pages.
 				</p>
 			</div>
+
 			<div
 				className="flex flex-col
 				lg:flex-row lg:px-[80px]">
+				{/* Costs image */}
 				<img
 					className="mt-[-20px] max-w-[400px] mx-auto
 					lg:ml-[-130px] lg:mt-[-70px] lg:max-w-[660px]"
 					src={MoneyPhone}
 					alt="iphone with coins on it"
 				/>
+
+				{/* Perks - Cards */}
 				<div
 					className="flex flex-col mt-2 gap-8 px-[40px]
 					lg:mt-[75px] lg:mr-[30px] lg:px-0">
@@ -50,6 +55,8 @@ export default function Costs() {
 						We install Google Analytics to monitor your website traffic
 					</SecondaryCard>
 				</div>
+
+				{/* Yellow semicircles on sides */}
 				<div
 					className="absolute bottom-[-2600px] left-0
 					lg:hidden">

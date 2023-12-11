@@ -12,7 +12,7 @@ export default function Features() {
 			className="flex flex-col items-center mt-20
 			sm:mt-44
 			lg:mt-0">
-			{/* WHY CHOOSE US */}
+			{/* Why choose us with Learn More button */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[720px]
 					lg:w-[850px]">
@@ -35,7 +35,7 @@ export default function Features() {
 				</div>
 			</div>
 
-			{/* FEATURES */}
+			{/* Feature cards */}
 			<div
 				className="flex flex-col justify-center gap-11 mt-14 px-[40px]
 				lg:flex-row lg:flex-wrap lg:px-[80px] lg:gap-16">
@@ -62,6 +62,8 @@ export default function Features() {
 					Our commitment to speed ensures that your website loads quickly,
 					enhancing user satisfaction.
 				</Card>
+
+				{/* Yellow semicircles on sides */}
 				<div
 					className="absolute bottom-[-700px] left-0
 					lg:hidden">

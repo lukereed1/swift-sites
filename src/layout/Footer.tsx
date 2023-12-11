@@ -4,6 +4,7 @@ import MenuButton from "../components/MenuButton";
 
 export default function Footer() {
 	return (
+		// Curved gradient background
 		<footer
 			className="w-full h-[300px] pt-4 bg-no-repeat bg-center
 			lg:mt-[200px]"

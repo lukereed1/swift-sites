@@ -12,12 +12,14 @@ import MediumSemiCircle from "../../assets/medium-semicircle.svg";
 export default function ProcessOverview() {
 	return (
 		<section className="flex flex-col items-center text-center">
-			{/* HOW IT WORKS */}
+			{/* How it works */}
 			<h2
 				className="text-[32px] font-bold mt-28
 				lg:mt-40 lg:text-4xl">
 				<span className="text-[#0066FF]">HOW</span> IT WORKS
 			</h2>
+
+			{/* Process cards */}
 			<div
 				className="flex justify-around px-[40px]
 				lg:mt-4 lg:px-[80px]">
@@ -56,9 +58,13 @@ export default function ProcessOverview() {
 						any updates or inquiries you may have.
 					</Card>
 				</div>
+
+				{/* Process image */}
 				<div className="hidden lg:flex h-[390px] mt-[170px] ml-11">
 					<img src={MobileStack} alt="stack of phones" />
 				</div>
+
+				{/* Yellow semicircles on sides */}
 				<div
 					className="absolute bottom-[-1650px] right-0 scale-x-[-1] z-[-1]
 					lg:hidden">
