@@ -11,11 +11,13 @@ export default function MenuButton() {
 	}
 
 	return (
-		<>
+		<div
+			className="flex
+			xl:hidden">
 			<SideMenu handleSideMenu={handleSideMenu} sideMenuOpen={sideMenuOpen} />
 			<button onClick={() => handleSideMenu()} className="text-white">
 				<RiMenu5Fill size={50} />
 			</button>
-		</>
+		</div>
 	);
 }
