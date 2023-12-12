@@ -26,8 +26,15 @@ export default function Hero({ isDarkMode, toggleDarkMode }: Props) {
 			style={{
 				backgroundImage: `url(${background})`,
 			}}>
-			<div className="hidden lg:flex flex-col gap-2 items-center absolute ml-[815px] mt-[120px]">
-				<Switch onChange={() => handleSwitch()} checked={isDarkMode} />
+			<div
+				className="hidden lg:flex flex-col gap-2 items-center absolute ml-[815px] mt-[120px] z-50
+				xl:ml-[1125px] xl:mt-[820px]
+				2xl:ml-[1480px]">
+				<Switch
+					onColor="#48AFFD"
+					onChange={() => handleSwitch()}
+					checked={isDarkMode}
+				/>
 				<p className="text-xl text-white">dark</p>
 			</div>
 			{/* Hero text and buttons */}
@@ -77,14 +84,3 @@ export default function Hero({ isDarkMode, toggleDarkMode }: Props) {
 		</section>
 	);
 }
-
-/*
-
-1440px
-		<section className="w-full">
-			<div
-				className="absolute w-full h-[1500px] bg-no-repeat bg-cover mt-[-200px]"
-				style={{ backgroundImage: `url(${Background})` }}></div>
-		</section>
-
-*/
