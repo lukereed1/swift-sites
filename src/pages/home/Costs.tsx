@@ -70,13 +70,13 @@ export default function Costs() {
 					<img src={SmallSemiCircle} alt="" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-2650px] left-0 z-[-1]
+					className="hidden absolute bottom-[-2550px] left-0 z-[-1]
 					lg:flex
 					xl:hidden">
 					<img src={MediumSemiCircle} alt="" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-3250px] left-0 z-[-1]
+					className="hidden absolute bottom-[-2850px] left-0 z-[-1]
 					lg:hidden
 					xl:flex">
 					<img src={LargeSemiCircle} alt="" />
