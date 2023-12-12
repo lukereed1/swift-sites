@@ -17,12 +17,14 @@ export default function Hero() {
 			<div
 				className="flex flex-col mt-[120px] px-[40px] text-center text-white
 				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]
-				xl:mt-[875px] xl:px-[120px] xl:w-[1440px]">
+				xl:mt-[875px] xl:px-[120px] xl:w-[1440px]
+				2xl:w-[1920px] 2xl:px-[180px] 2xl:mt-[900px]">
 				<div className="flex flex-col">
 					<h1
 						className="text-[30px] font-bold leading-10 max-w-[800px]
 						lg:text-[48px] lg:leading-[60px]
-						xl:text-[50px] xl:leading-[68px]">
+						xl:text-[50px] xl:leading-[68px]
+						2xl:text-[60px] 2xl:max-w-[900px]">
 						Website Design and
 						<br className="hidden lg:flex" /> Development for Small
 						<br className="hidden lg:flex" /> Businesses
@@ -49,7 +51,8 @@ export default function Hero() {
 				<img
 					className="w-full max-w-[450px] mx-auto
 					lg:absolute lg:ml-[420px] lg:mt-[50px] lg:max-w-[470px]
-					xl:ml-[570px] xl:mt-[-80px] xl:max-w-[660px]"
+					xl:ml-[570px] xl:mt-[-80px] xl:max-w-[660px]
+					2xl:ml-[700px] 2xl:mt-[-140px] 2xl:max-w-[900px]"
 					src={Laptop}
 					alt="laptop"
 				/>

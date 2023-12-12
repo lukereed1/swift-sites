@@ -16,7 +16,8 @@ export default function Footer() {
 			<div
 				className="flex justify-between items-center px-[40px] mx-auto
 				lg:px-[80px] lg:w-[1024px]
-				xl:px-[120px] xl:w-[1440px]">
+				xl:px-[120px] xl:w-[1440px]
+				2xl:w-[1920px] 2xl:px-[180px]">
 				{/* Logo */}
 				<button className="mt-[190px]">
 					<img className="w-[200px]" src={Logo} alt="swift sites logo" />

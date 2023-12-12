@@ -7,7 +7,8 @@ export default function Header() {
 		<header
 			className="flex justify-between items-center pt-3 px-[40px] mx-auto
 			lg:max-w-[1024px] lg:px-[80px]
-			xl:max-w-[1440px] xl:px-[120px] xl:pt-7">
+			xl:max-w-[1440px] xl:px-[120px] xl:pt-7
+			2xl:max-w-[1920px] 2xl:px-[180px]">
 			<button>
 				<img
 					className="w-[200px] lg:w-[280px]"
