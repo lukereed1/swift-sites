@@ -21,9 +21,11 @@ export default function SideMenu({ handleSideMenu, sideMenuOpen }: Props) {
 				className={`flex flex-col items-center gap-3 uppercase text-white text-lg ${
 					sideMenuOpen ? "flex" : "hidden"
 				}`}>
-				{navlinks.map(({ title }) => (
-					<a className="w-full text-center" href="#">
-						<li className="hover:bg-blue-100 hover:text-black">{title}</li>
+				{navlinks.map(({ title, path }) => (
+					<a className="w-full text-center" href="#" key={path}>
+						<li key={path} className="hover:bg-blue-100 hover:text-black">
+							{title}
+						</li>
 					</a>
 				))}
 			</ul>

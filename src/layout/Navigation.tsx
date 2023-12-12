@@ -6,7 +6,7 @@ export default function Navigation() {
 			className="hidden text-white gap-16 text-xl            
             xl:flex">
 			{navlinks.map(({ title, path }) => (
-				<a href="#">
+				<a key={path}>
 					<li className="hover:text-yellow-300" key={path}>
 						{title}
 					</li>

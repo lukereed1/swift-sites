@@ -2,8 +2,18 @@ import Background from "../../assets/background.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
 import SecondaryButton from "../../components/SecondaryButton";
+import Switch from "react-switch";
 
-export default function Hero() {
+interface Props {
+	isDarkMode: boolean;
+	toggleDarkMode: () => void;
+}
+
+export default function Hero({ isDarkMode, toggleDarkMode }: Props) {
+	function handleSwitch() {
+		toggleDarkMode();
+	}
+
 	return (
 		// Curved gradient background
 		<section
@@ -13,12 +23,18 @@ export default function Hero() {
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
+			<div className="hidden lg:flex flex-col gap-2 items-center absolute ml-[815px] mt-[120px]">
+				<Switch onChange={() => handleSwitch()} checked={isDarkMode} />
+				<p className="text-xl text-white">dark</p>
+			</div>
 			{/* Hero text and buttons */}
 			<div
-				className="flex flex-col mt-[120px] px-[40px] text-center text-white
+				className={`flex flex-col mt-[120px] px-[40px] text-center ${
+					isDarkMode ? "text-black" : "text-white"
+				}
 				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]
 				xl:mt-[875px] xl:px-[120px] xl:w-[1440px]
-				2xl:w-[1920px] 2xl:px-[180px] 2xl:mt-[900px]">
+				2xl:w-[1920px] 2xl:px-[180px] 2xl:mt-[900px]`}>
 				<div className="flex flex-col">
 					<h1
 						className="text-[30px] font-bold leading-10 max-w-[800px]
