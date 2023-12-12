@@ -3,6 +3,7 @@ import SecondaryCard from "../../components/SecondaryCard";
 import PrimaryButton from "../../components/PrimaryButton";
 import SmallSemiCircle from "../../assets/small-semicircle.svg";
 import MediumSemiCircle from "../../assets/medium-semicircle.svg";
+import LargeSemiCircle from "../../assets/large-semicircle.svg";
 
 export default function Costs() {
 	return (
@@ -10,14 +11,19 @@ export default function Costs() {
 			{/* Costs Description */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[880px]
-				lg:px-[80px]">
-				<h2 className="text-[32px] font-bold mt-20">
+				lg:px-[80px]
+				xl:px-[120px]">
+				<h2
+					className="text-[32px] font-bold mt-20
+					lg:text-4xl lg:mt-36
+					xl:text-[45px]">
 					<span className="text-[#0066FF]">$0 </span> Down,{" "}
 					<span className="text-[#0066FF]">$300 </span> Per Month
 				</h2>
 				<p
 					className="mt-1
-					lg:w-[880px] lg:text-lg">
+					lg:w-[880px] lg:text-lg lg:mt-4
+					xl:w-[1100px] xl:text-2xl xl:mt-6">
 					$0 down for a standard five page website, with an ongoing $300 per
 					month commitment for a minimum of 12 months. Custom pricing options
 					are available if you require more than five pages.
@@ -30,7 +36,8 @@ export default function Costs() {
 				{/* Costs image */}
 				<img
 					className="mt-[-20px] max-w-[400px] mx-auto
-					lg:ml-[-130px] lg:mt-[-70px] lg:max-w-[660px]"
+					lg:ml-[-130px] lg:mt-[-70px] lg:max-w-[660px]
+					xl:mt-[20px]"
 					src={MoneyPhone}
 					alt="iphone with coins on it"
 				/>
@@ -64,8 +71,15 @@ export default function Costs() {
 				</div>
 				<div
 					className="hidden absolute bottom-[-2650px] left-0 z-[-1]
-					lg:flex">
+					lg:flex
+					xl:hidden">
 					<img src={MediumSemiCircle} alt="" />
+				</div>
+				<div
+					className="hidden absolute bottom-[-3250px] left-0 z-[-1]
+					lg:hidden
+					xl:flex">
+					<img src={LargeSemiCircle} alt="" />
 				</div>
 			</div>
 

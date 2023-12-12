@@ -9,9 +9,17 @@ interface Props {
 export default function SecondaryCard({ heading, children }: Props) {
 	return (
 		<div className="flex flex-col items-center text-center">
-			<img className="w-[50px]" src={YellowTick} alt="yellow tick" />
-			<h3 className="text-lg font-bold">{heading}</h3>
-			<p>{children}</p>
+			<img
+				className="w-[50px] xl:w-[70px]"
+				src={YellowTick}
+				alt="yellow tick"
+			/>
+			<h3
+				className="text-lg font-bold
+				xl:text-2xl">
+				{heading}
+			</h3>
+			<p className="text-lg">{children}</p>
 		</div>
 	);
 }

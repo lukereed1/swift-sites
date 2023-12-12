@@ -8,6 +8,7 @@ import PrimaryButton from "../../components/PrimaryButton";
 import MobileStack from "../../assets/mobiles-howitworks.svg";
 import SmallSemiCircle from "../../assets/small-semicircle.svg";
 import MediumSemiCircle from "../../assets/medium-semicircle.svg";
+import LargeSemiCircle from "../../assets/large-semicircle.svg";
 
 export default function ProcessOverview() {
 	return (
@@ -78,8 +79,15 @@ export default function ProcessOverview() {
 				</div>
 				<div
 					className="hidden absolute bottom-[-1850px] right-0 scale-x-[-1] z-[-1]
-					lg:flex">
+					lg:flex
+					xl:hidden">
 					<img src={MediumSemiCircle} alt="yellow semi circle" />
+				</div>
+				<div
+					className="hidden absolute bottom-[-2150px] right-0 scale-x-[-1] z-[-1]
+					lg:hidden
+					xl:flex">
+					<img src={LargeSemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>
 

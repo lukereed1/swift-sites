@@ -76,7 +76,8 @@ export default function Features() {
 				</div>
 				<div
 					className="hidden absolute bottom-[-1100px] left-0 z-[-1]
-					lg:flex">
+					lg:flex
+					xl:bottom-[-1200px]">
 					<img src={MediumSemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>
