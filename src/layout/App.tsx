@@ -13,9 +13,9 @@ function App() {
 
 	return (
 		<>
-			<Header />
+			<Header isDarkMode={darkMode} />
 			<HomePage isDarkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-			<Footer />
+			<Footer isDarkMode={darkMode} />
 		</>
 	);
 }

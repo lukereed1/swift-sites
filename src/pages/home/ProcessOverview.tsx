@@ -10,15 +10,23 @@ import SmallSemiCircle from "../../assets/small-semicircle.svg";
 import MediumSemiCircle from "../../assets/medium-semicircle.svg";
 import LargeSemiCircle from "../../assets/large-semicircle.svg";
 
-export default function ProcessOverview() {
+interface Props {
+	isDarkMode: boolean;
+}
+export default function ProcessOverview({ isDarkMode }: Props) {
 	return (
 		<section className="flex flex-col items-center text-center">
 			{/* How it works */}
 			<h2
-				className="text-[32px] font-bold mt-28
+				className={`text-[32px] font-bold mt-28 ${
+					isDarkMode ? "text-white" : "text-black"
+				}
 				lg:mt-40 lg:text-4xl
-				xl:mt-44 xl:text-[45px]">
-				<span className="text-[#0066FF]">HOW</span> IT WORKS
+				xl:mt-44 xl:text-[45px]`}>
+				<span className={`${isDarkMode ? "text-[#48AFFD]" : "text-[#0066FF]"}`}>
+					HOW
+				</span>{" "}
+				IT WORKS
 			</h2>
 
 			{/* Process cards */}
@@ -30,6 +38,7 @@ export default function ProcessOverview() {
 					className="flex flex-col text-center mt-4 gap-9
 					xl:mt-8">
 					<Card
+						isDarkMode={isDarkMode}
 						leftAlign={true}
 						imageUrl={HandshakeIcon}
 						heading="Initial Consultation">
@@ -38,6 +47,7 @@ export default function ProcessOverview() {
 						requirements
 					</Card>
 					<Card
+						isDarkMode={isDarkMode}
 						leftAlign={true}
 						imageUrl={PaintBrushIcon}
 						heading="Design Phase">
@@ -45,17 +55,23 @@ export default function ProcessOverview() {
 						preferences
 					</Card>
 					<Card
+						isDarkMode={isDarkMode}
 						leftAlign={true}
 						imageUrl={SmallLaptopIcon}
 						heading="Development Phase">
 						Once you approve a design, we bring your website to life!
 					</Card>
-					<Card leftAlign={true} imageUrl={RocketIcon} heading="Launch!">
+					<Card
+						isDarkMode={isDarkMode}
+						leftAlign={true}
+						imageUrl={RocketIcon}
+						heading="Launch!">
 						After rigorous testing to ensure your website is perfect. Upon your
 						approval, we deploy your website, making it accessible to your
 						target audience
 					</Card>
 					<Card
+						isDarkMode={isDarkMode}
 						leftAlign={true}
 						imageUrl={SupportIcon}
 						heading="Post-Launch Support">
@@ -73,20 +89,26 @@ export default function ProcessOverview() {
 
 				{/* Yellow semicircles on sides */}
 				<div
-					className="absolute bottom-[-1650px] right-0 scale-x-[-1] z-[-1]
-					lg:hidden">
+					className={`absolute bottom-[-1650px] right-0 scale-x-[-1] z-[1] ${
+						isDarkMode ? "hidden" : ""
+					}
+					lg:hidden`}>
 					<img src={SmallSemiCircle} alt="yellow semi circle" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-1850px] right-0 scale-x-[-1] z-[-1]
+					className={`hidden absolute bottom-[-1550px] right-0 scale-x-[-1] z-[-1] ${
+						isDarkMode ? "lg:hidden" : ""
+					}
 					lg:flex
-					xl:hidden">
+					xl:hidden`}>
 					<img src={MediumSemiCircle} alt="yellow semi circle" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-2150px] right-0 scale-x-[-1] z-[-1]
+					className={`hidden absolute bottom-[-2150px] right-0 scale-x-[-1] z-[1] ${
+						isDarkMode ? "xl:hidden" : ""
+					}
 					lg:hidden
-					xl:flex">
+					xl:flex`}>
 					<img src={LargeSemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>

@@ -6,6 +6,7 @@ interface Props {
 	children: ReactNode;
 	largeFont?: boolean;
 	leftAlign?: boolean;
+	isDarkMode: boolean;
 }
 
 export default function PrimaryCard({
@@ -14,10 +15,11 @@ export default function PrimaryCard({
 	children,
 	largeFont,
 	leftAlign,
+	isDarkMode,
 }: Props) {
 	return (
 		<div
-			className={`flex flex-col items-center text-center ${
+			className={`flex flex-col items-center text-center  ${
 				largeFont ? "max-w-[720px]" : "max-w-[550px]"
 			} 
 			${
@@ -35,12 +37,16 @@ export default function PrimaryCard({
 			<div className={`${leftAlign ? "lg:text-left" : "text-center"}`}>
 				<h3
 					className={`mt-2 font-bold ${
+						isDarkMode ? "text-[#48AFFD]" : "text-black"
+					} ${
 						largeFont ? "text-lg lg:text-xl xl:text-2xl" : "text-lg xl:text-xl"
 					} lg:mt-4 xl:mt-6`}>
 					{heading}
 				</h3>
 				<p
 					className={`mt-1 xl:mt-2 ${
+						isDarkMode ? "text-white" : "text-black"
+					} ${
 						largeFont
 							? "text-base lg:text-lg xl:text-xl"
 							: "text-base lg:text-base xl:text-lg"

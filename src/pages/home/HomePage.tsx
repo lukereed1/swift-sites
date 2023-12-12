@@ -10,11 +10,11 @@ interface Props {
 
 export default function HomePage({ isDarkMode, toggleDarkMode }: Props) {
 	return (
-		<>
+		<div className={`${isDarkMode ? "bg-black" : "bg-transparent"} z-10`}>
 			<Hero isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-			<Features />
-			<ProcessOverview />
-			<Costs />
-		</>
+			<Features isDarkMode={isDarkMode} />
+			<ProcessOverview isDarkMode={isDarkMode} />
+			<Costs isDarkMode={isDarkMode} />
+		</div>
 	);
 }

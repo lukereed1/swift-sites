@@ -2,7 +2,11 @@ import Logo from "../assets/logo.svg";
 import MenuButton from "../components/MenuButton";
 import Navigation from "./Navigation";
 
-export default function Header() {
+interface Props {
+	isDarkMode: boolean;
+}
+
+export default function Header({ isDarkMode }: Props) {
 	return (
 		<header
 			className="flex justify-between items-center pt-3 px-[40px] mx-auto
@@ -20,7 +24,7 @@ export default function Header() {
 			{/* Hamburger menu for Mobile and Tablet, Navlinks for Desktop (+1440px) */}
 			<div>
 				<Navigation />
-				<MenuButton />
+				<MenuButton isDarkMode={isDarkMode} />
 			</div>
 		</header>
 	);

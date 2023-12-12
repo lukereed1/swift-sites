@@ -6,29 +6,41 @@ import RunningIcon from "../../assets/running-icon.svg";
 import SmallSemiCircle from "../../assets/small-semicircle.svg";
 import MediumSemiCircle from "../../assets/medium-semicircle.svg";
 
-export default function Features() {
+interface Props {
+	isDarkMode: boolean;
+}
+
+export default function Features({ isDarkMode }: Props) {
 	return (
 		<section
-			className="flex flex-col items-center mt-20
+			className={`flex flex-col items-center mt-20 ${
+				isDarkMode ? "bg-black" : "bg-transparent"
+			}
 			sm:mt-44
 			lg:mt-0
-			xl:mt-[-100px]">
+			xl:mt-[-100px]`}>
 			{/* Why choose us with Learn More button */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[720px]
 					lg:max-w-[850px]
 					xl:max-w-[1200px]">
 				<h2
-					className="text-[32px] font-bold
+					className={`text-[32px] font-bold ${
+						isDarkMode ? "text-white" : "text-black"
+					}
 					lg:text-4xl
-					xl:text-[45px]">
-					<span className="text-[#0066FF]">WHY</span> CHOOSE US
+					xl:text-[45px]`}>
+					<span
+						className={`${isDarkMode ? "text-[#48AFFD]" : "text-[#0066FF]"}`}>
+						WHY
+					</span>{" "}
+					CHOOSE US
 				</h2>
 
 				<p
-					className="mt-2
+					className={`mt-2 ${isDarkMode ? "text-white" : "text-black"}
 					lg:text-lg lg:mt-3
-					xl:text-2xl xl:mt-6">
+					xl:text-2xl xl:mt-6`}>
 					We deliver elegant web solutions tailored to meet your specific needs.
 					Our team combines simplicity and sophistication to create impactful
 					digital experiences for your business
@@ -47,6 +59,7 @@ export default function Features() {
 				<Card
 					imageUrl={LaptopIcon}
 					heading="Responsive Design"
+					isDarkMode={isDarkMode}
 					largeFont={true}>
 					Our websites adapt to various screen sizes, ensuring a consistent and
 					user-friendly experience across devices.
@@ -55,7 +68,8 @@ export default function Features() {
 				<Card
 					imageUrl={MobileIcon}
 					heading="Mobile-First Design"
-					largeFont={true}>
+					largeFont={true}
+					isDarkMode={isDarkMode}>
 					We prioritise a mobile-first approach in our design and development
 					process. Then extend on that to cater for tablet and desktop.
 				</Card>
@@ -63,21 +77,26 @@ export default function Features() {
 				<Card
 					imageUrl={RunningIcon}
 					heading="Fast Loading Times"
-					largeFont={true}>
+					largeFont={true}
+					isDarkMode={isDarkMode}>
 					Our commitment to speed ensures that your website loads quickly,
 					enhancing user satisfaction.
 				</Card>
 
 				{/* Yellow semicircles on sides */}
 				<div
-					className="absolute bottom-[-700px] left-0
-					lg:hidden">
+					className={`absolute bottom-[-700px] left-0 ${
+						isDarkMode ? "hidden" : ""
+					}
+					lg:hidden`}>
 					<img src={SmallSemiCircle} alt="yellow semi circle" />
 				</div>
 				<div
-					className="hidden absolute bottom-[-1100px] left-0 z-[-1]
+					className={`hidden absolute bottom-[-750px] left-0 z-[-1] ${
+						isDarkMode ? "lg:hidden" : ""
+					}
 					lg:flex
-					xl:bottom-[-1200px]">
+					xl:bottom-[-1200px]`}>
 					<img src={MediumSemiCircle} alt="yellow semi circle" />
 				</div>
 			</div>

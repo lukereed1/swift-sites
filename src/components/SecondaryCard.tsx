@@ -4,9 +4,14 @@ import YellowTick from "../assets/yellow-tick.svg";
 interface Props {
 	heading: string;
 	children: ReactNode;
+	isDarkMode: boolean;
 }
 
-export default function SecondaryCard({ heading, children }: Props) {
+export default function SecondaryCard({
+	heading,
+	children,
+	isDarkMode,
+}: Props) {
 	return (
 		<div className="flex flex-col items-center text-center">
 			<img
@@ -15,11 +20,15 @@ export default function SecondaryCard({ heading, children }: Props) {
 				alt="yellow tick"
 			/>
 			<h3
-				className="text-lg font-bold
-				xl:text-2xl">
+				className={`text-lg font-bold ${
+					isDarkMode ? "text-[#48AFFD]" : "text-black"
+				}
+				xl:text-2xl`}>
 				{heading}
 			</h3>
-			<p className="text-lg">{children}</p>
+			<p className={`text-lg ${isDarkMode ? "text-white" : "text-black"}`}>
+				{children}
+			</p>
 		</div>
 	);
 }
