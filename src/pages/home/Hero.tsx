@@ -9,7 +9,7 @@ export default function Hero() {
 		<section
 			className="flex justify-center w-full h-[575px] mt-[-90px] bg-no-repeat bg-cover
 			lg:mt-[-108px] lg:h-[740px]
-			xl:mt-[-124px]"
+			xl:mt-[-824px] xl:h-[1765px]"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
@@ -17,7 +17,7 @@ export default function Hero() {
 			<div
 				className="flex flex-col mt-[120px] px-[40px] text-center text-white
 				lg:text-left lg:mt-[145px] lg:px-[80px] lg:w-[1024px]
-				xl:mt-[200px] xl:px-[120px] xl:w-[1440px]">
+				xl:mt-[875px] xl:px-[120px] xl:w-[1440px]">
 				<div className="flex flex-col">
 					<h1
 						className="text-[30px] font-bold leading-10 max-w-[800px]

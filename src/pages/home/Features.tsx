@@ -12,7 +12,7 @@ export default function Features() {
 			className="flex flex-col items-center mt-20
 			sm:mt-44
 			lg:mt-0
-			xl:mt-28">
+			xl:mt-[-100px]">
 			{/* Why choose us with Learn More button */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[720px]

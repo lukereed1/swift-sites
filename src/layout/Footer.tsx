@@ -8,7 +8,8 @@ export default function Footer() {
 		// Curved gradient background
 		<footer
 			className="w-full h-[300px] pt-4 bg-no-repeat bg-center
-			lg:mt-[200px]"
+			lg:mt-[200px]
+			xl:bg-cover xl:h-[300px]"
 			style={{
 				backgroundImage: `url(${Background})`,
 			}}>
