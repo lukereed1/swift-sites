@@ -18,7 +18,7 @@ export default function Features({ isDarkMode }: Props) {
 			}
 			sm:mt-44
 			lg:mt-0
-			xl:mt-[-100px]`}>
+			xl:mt-[-110px]`}>
 			{/* Why choose us with Learn More button */}
 			<div
 				className="flex flex-col items-center text-center px-[40px] max-w-[720px]
