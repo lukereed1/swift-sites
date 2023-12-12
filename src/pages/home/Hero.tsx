@@ -1,5 +1,5 @@
-import Background from "../../assets/background.svg";
-import DarkBackground from "../../assets/dark-background.svg";
+import Background from "/background.svg";
+import DarkBackground from "/dark-background.svg";
 import PrimaryButton from "../../components/PrimaryButton";
 import Laptop from "../../assets/laptop-hero.svg";
 import SecondaryButton from "../../components/SecondaryButton";

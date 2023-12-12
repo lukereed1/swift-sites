@@ -1,5 +1,5 @@
-import Background from "../assets/footer-background.svg";
-import DarkBackground from "../assets/dark-footer-background.svg";
+import Background from "/footer-background.svg";
+import DarkBackground from "/dark-footer-background.svg";
 import Logo from "../assets/logo.svg";
 import MenuButton from "../components/MenuButton";
 import Navigation from "./Navigation";
@@ -31,7 +31,7 @@ export default function Footer({ isDarkMode }: Props) {
 					<img className="w-[200px]" src={Logo} alt="swift sites logo" />
 				</button>
 				<div className="mt-[195px] xl:hidden">
-					<MenuButton />
+					<MenuButton isDarkMode={isDarkMode} />
 				</div>
 				<div className="hidden xl:flex mt-[195px]">
 					<Navigation />
