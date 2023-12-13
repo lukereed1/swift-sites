@@ -27,7 +27,7 @@ export default function Hero({ isDarkMode, toggleDarkMode }: Props) {
 				backgroundImage: `url(${background})`,
 			}}>
 			<div
-				className="hidden lg:flex flex-col gap-2 items-center absolute ml-[815px] mt-[120px] z-50
+				className="hidden lg:flex flex-col gap-2 items-center absolute ml-[815px] mt-[120px] z-20
 				xl:ml-[1125px] xl:mt-[850px]
 				2xl:ml-[1190px]">
 				<Switch

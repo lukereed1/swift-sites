@@ -14,7 +14,7 @@ export default function SideMenu({
 }: Props) {
 	return (
 		<div
-			className={`fixed right-0 top-0  h-full duration-300 z-10 ${
+			className={`fixed right-0 top-0  h-full duration-300 z-50 ${
 				isDarkMode ? "bg-[#0c1721]" : "bg-blue-700"
 			} ${sideMenuOpen ? "w-[60%] lg:w-[40%]" : "w-[0%]"}`}>
 			<div className="pl-3 pt-3">
