@@ -76,7 +76,7 @@ export default function Hero({ isDarkMode, toggleDarkMode }: Props) {
 					className="w-full max-w-[450px] mx-auto
 					lg:absolute lg:ml-[420px] lg:mt-[50px] lg:max-w-[470px]
 					xl:ml-[570px] xl:mt-[-80px] xl:max-w-[660px]
-					2xl:ml-[700px] 2xl:mt-[-140px] 2xl:max-w-[900px]"
+					2xl:ml-[700px] 2xl:mt-[-115px] 2xl:max-w-[900px]"
 					src={Laptop}
 					alt="laptop"
 				/>
