@@ -8,7 +8,7 @@ A website created for a fake company that designs and develops websites for smal
 
 - TypeScript
 - React
-
+- TailwindCSS
 ## Design Mockups
 
 ![image](/mockups.svg)
